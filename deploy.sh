@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 BRANCH=master
-TARGET_REPO=blog/ezobn.github.io.git
+TARGET_REPO=https://github.com/ezobn/blog.git
 PELICAN_OUTPUT_FOLDER=output
 
 echo -e "Testing travis-encrypt"
@@ -15,7 +15,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     #using token clone gh-pages branch
     git clone --quiet --branch=$BRANCH https://${GH_TOKEN}@github.com/$TARGET_REPO built_website > /dev/null
     #go into directory and copy data we're interested in to that directory
-    cd built_website
+    cd output
     rsync -rv --exclude=.git  ../$PELICAN_OUTPUT_FOLDER/* .
     #add, commit and push files
     git add -f .
