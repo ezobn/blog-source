@@ -1,0 +1,20 @@
+branches:
+  only:
+  - master
+language: python
+python:
+- 2.7
+install:
+- pip install -r requirements.txt --use-mirrors
+script:
+- make html
+notifications:
+  email:
+    on_success: always
+    on_failure: always
+before_install:
+- git submodule update --init --recursive
+after_success: bash deploy.sh
+env:
+  global:
+    secure: p9WJQa0cJhf+fmwXYGcH5egyTkoJxcGvFlARo9OkI4JsmiEObyaIA9C3SKOYEwqVr+B6xYl2K/nw+0kDxihmDmND34lVmglsoOB+2UrG5UHUWVOAVIomdcmaqWtgSOfLtgeN4iL9UKx43MSbk1WNpJ0VbkpIbO0JK33Ufd5yIzw=
