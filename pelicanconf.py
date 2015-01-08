@@ -23,7 +23,8 @@ PATH = 'blog-source'
 #THEME = '/home/ez/virtualenvs/pelican/src/pelican/pelican/themes/github/pure'
 #THEME = '/home/ez/virtualenvs/pelican/src/pelican/pelican/themes/github/html5-dopetrope'
 #THEME = '/home/ez/virtualenvs/pelican/src/pelican/pelican/themes/github/elegant'
-THEME = '/home/ez/virtualenvs/pelican/src/pelican/pelican/themes/github/fresh'
+#THEME = '/home/ez/virtualenvs/pelican/src/pelican/pelican/themes/github/fresh'
+THEME = 'fresh'
 
 TIMEZONE = 'Europe/Moscow'
 
