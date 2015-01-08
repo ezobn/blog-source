@@ -15,7 +15,7 @@ DISQUS_SITENAME = 'blogfgtsru'
 #GOOGLE_ANALYTICS = ''
 GITHUB_URL = 'https://ezobn.github.io/blog'
 
-PATH = 'blog-source'
+PATH = 'content'
 #THEME = '/home/ez/virtualenvs/pelican/src/pelican/pelican/themes/github/BT3-Flat'
 #THEME = '/home/ez/virtualenvs/pelican/src/pelican/pelican/themes/github/blue-penguin'
 #THEME = '/home/ez/virtualenvs/pelican/src/pelican/pelican/themes/github/built-texts'
@@ -24,7 +24,7 @@ PATH = 'blog-source'
 #THEME = '/home/ez/virtualenvs/pelican/src/pelican/pelican/themes/github/html5-dopetrope'
 #THEME = '/home/ez/virtualenvs/pelican/src/pelican/pelican/themes/github/elegant'
 #THEME = '/home/ez/virtualenvs/pelican/src/pelican/pelican/themes/github/fresh'
-THEME = 'fresh'
+#THEME = 'fresh'
 
 TIMEZONE = 'Europe/Moscow'
 
