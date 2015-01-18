@@ -1,24 +1,24 @@
-Title: MAAS - (Metal-as-a-Service) 
+Title: MAAS - Metal as a Service 
 Date: 2015-01-18 17:00
 Category: Ubuntu 
 Tags: MAAS
 
-##MAAS - (Metal-as-a-Service) автоматизация установки операционных систем и выделение по требованию физических серверов
+##MAAS - Metal as a Service 
 
-Как и облачные решения, MAAS позволяет представить кластер в виде пула ресурсов, которые могут быть запрошены в любой момент времени. Однако, в отличие от облачных платформ, выделение ресурсов на таком кластере происходит на уровне физических серверов, а не виртуальных. MAAS объединяет множество серверов в пул, а затем отдает команды с помощью веб или CLI-интерфейса на установку необходимой операционной системы.
+Metal as a Service brings the language of the cloud to physical servers. It makes it easy to set up the hardware on which to deploy any service that needs to scale up and down dynamically; a cloud being just one example.
 
-В основе MAAS используется  PXE окружение с возможностью загрузки с различных подготовленных образов операционных систем,  который позволяет превратить процесс установки и настройки ОС в чрезвычайно простую задачу, выполняемую с использованием двух-трех команд, а также позволяет автоматически вести инвентаризацию серверов при их добавлении в пул.
+It lets you provision your servers dynamically, just like cloud instances – only in this case, they’re whole physical nodes. “Add another node to the Hadoop cluster, and make sure it has at least 16GB RAM” is as easy as asking for it.
 
 ![MAAS architecture](http://maas.ubuntu.com/docs1.5/_images/orientation_architecture-diagram.png)
 
-MAAS спроектирован с учетом возможности масштабирования от нескольких серверов до тысяч серверов при необходимости.  Это достигается за счет современной архитектуры решения. Ключевые компоненты MAAS:
+MAAS is designed to work with your physical hardware, whether your setup includes thousands of server boxes or only a few. The key components of the MAAS software are:
 
 - Region controller
 - Cluster controller(s)
 - Nodes
 
-Для небольших исталяций (по числу узлов), достаточно установки Region controller и Сluster controller на одном и том же сервере - если требуется установка с поддержкой серверов (Nodes) в нескольких сементах сети, имеет смысл в установке на каждый сегмент отдельного Cluster controller. 
+For small (in terms of number of nodes) setups, you will probably just install the Region controller and a cluster controller on the same server - it is only worth having multiple region controllers if you need to organise your nodes into different subnets (e.g. if you have a lot of nodes).
 
-С помощью простого Web interface MAAS позволяет, устанвливать, обновлять и удалять сервера по желанию. Кроме того по каждому серверу доступна инвенторизационная информация, по количеству RAM, CPU, Storage, Network interfaces, а также полный XML  вывод "lshw" утилиты. 
+With a simple web interface, you can add, commission, update and recycle your servers at will. As your needs change, you can respond rapidly, by adding new nodes and dynamically re-deploying them between services. When the time comes, nodes can be retired for use outside the MAAS.
 
-API MAAS может быть использован с помощью утилиты [Juju](http://juju.ubuntu.com/)  для развертывания на серверных ресурсах различных приложений из магазина приложений JuJu.
+MAAS works closely with the service orchestration tool  [Juju](http://juju.ubuntu.com/) to make deploying services fast, reliable, repeatable and scalable.
