@@ -6,14 +6,14 @@ AUTHOR = u'Evgeny Zobnitsev'
 SITENAME = u'FGTS Blog'
 SITEURL = ''
 #Custom for fresh teame
-GOOGLE_CUSTOM_SEARCH = '010876618395126198893:3pktv5ynnok'
+#GOOGLE_CUSTOM_SEARCH = '010876618395126198893:3pktv5ynnok'
 #HIDE_CATEGORIES_FROM_MENU = True
 SHARETHIS_PUB_KEY = 'c6a57063-7758-43f1-8987-728852dc33b8'
 
 #global
 DISQUS_SITENAME = 'blogfgtsru'
 #GOOGLE_ANALYTICS = ''
-GITHUB_URL = 'https://http://github.com/ezobn/ezobn.github.io/'
+GITHUB_URL = 'https://github.com/ezobn/ezobn.github.io/'
 
 PATH = 'content'
 #THEME = '/home/ez/virtualenvs/pelican/src/pelican/pelican/themes/github/BT3-Flat'
