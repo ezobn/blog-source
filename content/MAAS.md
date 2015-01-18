@@ -3,8 +3,6 @@ Date: 2015-01-18 17:00
 Category: Ubuntu 
 Tags: MAAS
 
-##MAAS - Metal as a Service 
-
 Metal as a Service brings the language of the cloud to physical servers. It makes it easy to set up the hardware on which to deploy any service that needs to scale up and down dynamically; a cloud being just one example.
 
 It lets you provision your servers dynamically, just like cloud instances – only in this case, they’re whole physical nodes. “Add another node to the Hadoop cluster, and make sure it has at least 16GB RAM” is as easy as asking for it.

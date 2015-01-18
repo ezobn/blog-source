@@ -13,7 +13,7 @@ SHARETHIS_PUB_KEY = 'c6a57063-7758-43f1-8987-728852dc33b8'
 #global
 DISQUS_SITENAME = 'blogfgtsru'
 #GOOGLE_ANALYTICS = ''
-GITHUB_URL = 'https://github.com/ezobn/ezobn.github.io/'
+GITHUB_URL = 'https://github.com/ezobn/pelican-blog-source/'
 
 PATH = 'content'
 #THEME = '/home/ez/virtualenvs/pelican/src/pelican/pelican/themes/github/BT3-Flat'
