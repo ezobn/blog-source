@@ -4,6 +4,7 @@ Category: Ubuntu
 Tags: Juju
 
 Configure, manage, maintain, deploy and scale efficiently with best-practice Charms on any public, private or hybrid cloud from a powerful GUI or the command-line.
+
 - Deploy
 Juju manages your systems architecture as services in the cloud. It is a simple client/server application that bootstraps an instance to create and control the rest of your environment. You can use it through a GUI or from the command-line, scale in all directions and easily move your environment between clouds.
 - Juju manages services
