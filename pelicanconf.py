@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Evgeny Zobnitsev'
-SITENAME = u'FGTS Blog'
+SITENAME = u'ezBlog'
 SITEURL = ''
 #Custom for fresh teame
 #GOOGLE_CUSTOM_SEARCH = '010876618395126198893:3pktv5ynnok'
